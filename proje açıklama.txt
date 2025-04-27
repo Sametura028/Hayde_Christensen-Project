@@ -1,0 +1,30 @@
+Sınav Projesi
+Sınav Projesi Teslim Yönergeleri
+Öğrenciler aşağıdaki kurallara uygun şekilde 3 sayfadan oluşan kişisel bir web sitesi projesi
+hazırlayıp teslim etmelidir. Bu kişi bir futbolcu, müzisyen, akademisyen, yazılımcı, tasarımcı veya
+kendiniz olabilirsiniz.
+1. Proje en az 3 HTML sayfasından oluşmalıdır: Örneğin: Ana sayfa, galeri ve iletişim.
+2. Sayfalar arasında geçiş sağlayan ortak bir menü bulunmalıdır.
+3. En az 5 adet görsel (fotoğraf) içermelidir.
+4. En az 1 dış bağlantı (external link) yer almalıdır (örneğin google.com’a yönlendirme gibi).
+5. CSS dosyaları mutlaka external (ayrı dosya) olarak kullanılmalıdır.
+6. Div/Section yapısı anlamlı bölümler için mutlaka kullanılmalıdır.
+7. Görsel tasarım ve kullanıcı deneyimine dikkat edilmelidir. Tasarım noktası önemlidir!
+8. Ekstra olarak:
+- Hover efektleri,
+- Google Fonts veya ikon kullanımı önerilir.
+Teslim Şekli:
+- Proje ZIP dosyası olarak teslim edilmelidir.
+- Ayrıca, aşağıdaki gibi açıklamalı PDF, DOCX, PPT sunumu da istenmektedir.
+Açıklamalı Kod Sunumu (Örnek)
+Öğrenciler, kendi yazdıkları projeden en az 10 farklı satırı ekran görüntüsü alarak açıklamalıdır.
+Aşağıda 2 farklı örnek yer almaktadır;
+Aşağıda örnek açıklamalar verilmiştir:
+Kod: <div class="hero">
+Açıklama: Bu div, sayfanın en üstündeki büyük görsel alanı (hero) sarmalamak için kullanılmıştır.
+Kod: position: relative;
+Açıklama: Bu CSS özelliği, bu öğeyi kendi konumuna göre konumlandırabilmemizi sağlar.
+Değerlendirme
+Projenin istenilen yönergeler doğrultusunda eksiksiz teslim edilmesi : 50 puan
+Tasarım : 30 puan
+Seçilen 10 kodun anlatımı : 20 puan
