@@ -9,7 +9,20 @@
     --danger: #d9534f;
     --success: #5cb85c;
 }
-
+.contain{
+    object-fit: contain !important;
+}
+.gallery-preview-overlay {
+    display: none;
+}
+a.btn.btn-outline-dark.btn-lg.aos-init.aos-animate {
+    transition: all .4s;
+}
+img.img-fluid.rounded.shadow-sm {
+    max-height: 170px;
+    width: 100%;
+    object-fit: cover;
+}
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--dark);
@@ -255,7 +268,8 @@ footer {
     line-height: 50px;
     text-align: center;
     border-radius: 50%;
-    background-color: white;
+    /* background-color: white; */
+    color: white!important;
     color: var(--dark);
     margin: 0 5px;
     font-size: 18px;
@@ -520,7 +534,8 @@ body {
 /* Galeri Responsive Ayarları */
 .gallery-item img {
     width: 100%;
-    height: auto;
+      height: 220px;
+    object-fit: cover;
 }
 
 @media (max-width: 767.98px) {
