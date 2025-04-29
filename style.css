@@ -473,11 +473,7 @@ body {
     /* height: 100vh; */
 }
 
-@media (max-width: 768px) {
-    .hero-slider, .slick-slide-item {
-        /* height: 80vh; */
-    }
-    
+@media (max-width: 768px) {  
     .slick-slide-item .display-3 {
         font-size: 2.5rem;
     }

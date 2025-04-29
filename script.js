@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     
     window.addEventListener('scroll', function() {
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -31,14 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize AOS
     AOS.init({
         duration: 800,
         once: true,
         easing: 'ease-in-out'
     });
 
-    // Form validation for contact form
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -49,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const email = document.getElementById('email');
             const message = document.getElementById('message');
             
-            // Simple validation
             if (name.value.trim() === '') {
                 showError(name, 'Lütfen adınızı girin');
                 isValid = false;
@@ -75,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             if (isValid) {
-                // Show success message (in real app would send form data to server)
                 const alert = document.createElement('div');
                 alert.className = 'alert alert-success mt-3';
                 alert.textContent = 'Mesajınız başarıyla gönderildi!';
@@ -90,15 +84,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Gallery filtering functionality
     const filterButtons = document.querySelectorAll('.filter-btn');
     if (filterButtons.length > 0) {
         filterButtons.forEach(button => {
             button.addEventListener('click', function() {
-                // Remove active class from all buttons
+                // active classını kaldır   
                 filterButtons.forEach(btn => btn.classList.remove('active'));
                 
-                // Add active class to clicked button
+                // tıklanan butona active classını ekle
                 this.classList.add('active');
                 
                 const filterValue = this.getAttribute('data-filter');
@@ -117,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Helper functions
     function showError(input, message) {
         const formGroup = input.parentElement;
         const errorDiv = formGroup.querySelector('.invalid-feedback') || document.createElement('div');
@@ -166,7 +158,6 @@ document.addEventListener("DOMContentLoaded", function() {
             imageObserver.observe(img);
         });
     } else {
-        // Fallback for browsers that don't support IntersectionObserver
         lazyImages.forEach(function(img) {
             img.src = img.dataset.src;
         });
